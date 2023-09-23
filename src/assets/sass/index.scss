@@ -1,0 +1,30 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif !important;
+
+  // variables
+  $primary-color: #ffaf42;
+  $secondary-color: #ffffff;
+  $accent-color: #fedebeb2;
+
+  // nabvar_brand styling
+  .navbar_brand {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $primary-color;
+  }
+
+  // global button and anchor tags default outline style
+  button, a {
+    outline: none !important;
+  }
+
+  // toggle styling
+  input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: $primary-color;
+  }  
+}
