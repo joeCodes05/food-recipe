@@ -44,7 +44,7 @@ export default function Navbar() {
           {navbarData.map((data, index) => {
             const { name, pagePath } = data
             return (
-              <Link key={index} to={pagePath} className={`text-sm font-semibold leading-6 ${theme ? "text-white" : "text-gray-900"} relative hover:text-primary before:absolute before:bottom-0 before:left-[50%] before:-translate-x-[50%] before:h-[2px] before:w-0 before:duration-700 duration-700 before:bg-primary hover:before:w-full`}>
+              <Link key={index} to={pagePath} className={`text-md font-[400] leading-6 ${theme ? "text-white" : "text-gray-900"} relative hover:text-primary before:absolute before:bottom-0 before:left-[50%] before:-translate-x-[50%] before:h-[2px] before:w-0 before:duration-700 duration-700 before:bg-primary hover:before:w-full`}>
                 {name}
               </Link>
             )
